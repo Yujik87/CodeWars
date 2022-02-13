@@ -1,4 +1,6 @@
-const comfortableWord = word => {
+// 8kuy
+
+/*const comfortableWord = word => {
     let separetedWord = [...word];
     let left = ['q', 'w', 'e', 'r', 't', 'a', 's', 'd', 'f', 'g', 'z', 'x', 'c', 'v', 'b'];
     let right = ['y', 'u', 'i', 'o', 'p', 'h', 'j', 'k', 'l', 'n', 'm'];
@@ -21,7 +23,13 @@ const comfortableWord = word => {
     } else {
         return (odd.every(el => right.includes(el)) && even.every(el => left.includes(el)))
     }
+};*/
 
+// Square(n) Sum
 
+function squareSum(numbers){
+    return numbers.reduce((acc, el) => acc + el*el, 0);
+}
 
-};
+console.log(squareSum([1,2,3]))
+console.log(squareSum([0,3,4,5]))
